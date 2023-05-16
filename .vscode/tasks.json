@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Сборка проекта",
+            "type": "shell",
+            "command": "g++ Chapter_5.cpp -o Chapter_5"
+        },
+        {
+            "label": "Запуск проекта",
+            "type": "shell",
+            "command": "./Chapter_5.exe"
+        }
+    ]
+}
