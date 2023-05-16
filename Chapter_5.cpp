@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <cstdlib> // для system
+#include <string>
 
 using namespace std;
 
@@ -12,13 +13,13 @@ char *c = &ch;
         //массив из 10 целых
 int m[10] = {1, 2, 3, 4};
         //ссылка на массив из 10 целых
+int (&mm)[] = m;
+        //указатель на массив строк
+string *s {"1"}; 
 
-int &mm = m[0];
-
-//m = 5;
 
 int main()
 {
-    printf("%i",mm);
+    printf("%i",mm[0]);
     return 0;
 }
