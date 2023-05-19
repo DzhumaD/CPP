@@ -15,11 +15,18 @@ int m[10] = {1, 2, 3, 4};
         //ссылка на массив из 10 целых
 int (&mm)[] = m;
         //указатель на массив строк
-string *s {"1"}; 
-
-
+string s[] {"Hello"}; 
+string *ss = s;
+        //указатель на указатель на символ
+char *cc = c;        
+        //целая константа
+const int i = 5;
+        //указатель на целую константу
+const int *ii = &i; 
+               
 int main()
 {
-    printf("%i",mm[0]);
+    printf("%s", s[0]);
+    cout << "Hello!";
     return 0;
 }
